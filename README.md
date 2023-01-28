@@ -1,10 +1,10 @@
-## Open Source Ethereum Mining Pool PPLNS / SOLO
+## Open Source Ethereum Classic Mining Pool PPLNS / SOLO
 
 ### Donations
 
 * Donate 1% from pool fees to developers (Attention becomes automatic)
 
-### My [Pool](https://etc.yu-tam.contact).
+### My [Pool](https://etc-solo.com).
 
 * open-etc-pool-friends wallet ETC: 0xd92fa5a9732a0aec36dc8d5a6a1305dc2d3e09e6
 
@@ -12,11 +12,9 @@
 
 ### Features
 
-### Email: office.poolnode@gmail.com
+### Email: celldr69@gmail.com@gmail.com
 
-### [YouTube](https://www.youtube.com/channel/UCeSEGwWB8LWtu7BM8OpH6yA).
 
-### [hey come check out Discord with me](https://discord.gg/zdnuXm4uby).
 
 **This pool is being further developed to provide an easy to use pool for Ethereum Classic miners. This software is functional however an optimised release of the pool is expected soon. Testing and bug submissions are welcome!**
 
@@ -49,7 +47,7 @@ Clone & compile:
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     sudo apt-get install -y nodejs
     
-    git clone https://github.com/yuriy0803/open-etc-pool-friends.git
+    git clone https://github.com/MiningCryptoLive/etc-solo.com.git
     cd open-etc-pool-friends
    
     go build
