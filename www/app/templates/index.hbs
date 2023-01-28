@@ -1,0 +1,158 @@
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+	  <div class="note note-success">
+        <h4>Your Stats &amp; Payment History</h4>
+        <div class="input-group">
+          {{input value=cachedLogin class="form-control" placeholder="Enter Your Ethereum Classic Address"}}
+          <span class="input-group-btn">
+            <button class="btn btn-primary btn-etc" type="button" {{action 'lookup' cachedLogin}}>
+              <span style="display: inline;"><i class="fa fa-search"></i> Lookup</span>
+            </button>
+          </span>
+        </div>
+		<br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="note note-success text-center">
+<h4><b>HIGH PERFORMANCE SOLO MINING POOL</b></h4>
+<h3 style="color:red;">POOL PORTS</h3>
+	<h4 style="color:green"><i class="fa fa-server"></i> ETC-SOLO.COM</h4>
+	<h4><i class="fab fa-megaport"></i> 10G PORT: 8010</h4>
+	<h4><i class="fab fa-megaport"></i> 44G PORT: 8044</h4>
+	<h4><i class="fab fa-megaport"></i> 77G PORT: 8077</h4>
+	<h4><i class="fab fa-key"></i> NICEHASH PASSWORD: X on all ports</h4>
+	</div>
+  </div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+	<div class="col-xs-12 col-md-6">
+	<div class="note note-success">
+	<center>
+	<div class="text-green"><h3>{{format-hashrate stats.model.hashrate}}</h3></div><small class="text-black"><b>POOL</b></small><small class="text-green"><u> HASHRATE</u></small>
+	</center>
+	</div>
+  </div>
+<div class="col-xs-12 col-md-6 pull-right">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{format-number stats.roundVariance style='percent'}}</h3></div><small class="text-black"><b>POOL</b></small> <small class="text-green"><u>LUCK</u></small>
+	   </center>
+	<div class="progress">
+  <div class="progress-bar bg-green" style="width:{{format-number stats.roundVariance style='percent'}}"></div>
+	</div>
+	  </div>
+	</div>
+	</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+	    <div class="text-black"><h3>{{format-number stats.model.minersTotal}}</h3></div><small class="text-black"><b>ACTIVE</b></small> <small class="text-green"><u>MINERS</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{format-number stats.height}}</h3></div><small class="text-black"><b>BLOCKCHAIN</b></small> <small class="text-green"><u>HEIGHT</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-green"><h3><span>$ {{model.exchangedata.current_price}}</span></h3></div><small class="text-black"><b>CURRENT</b></small> <small class="text-green"><u>PRICE</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-green"><h3>{{format-hashrate stats.hashrate}}</h3></div><small class="text-black"><b>NETWORK</b></small> <small class="text-green"><u>HASHRATE</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-red"><h3>{{with-metric-prefix stats.difficulty}}</h3></div><small class="text-black"><b>NETWORK</b></small> <small class="text-green"><u>DIFFICULTY</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{config.PoolFee}}</h3></div><small class="text-black"><b>POOL</b></small> <small class="text-green"><u>FEE</u></small>
+	   </center>
+	  </div>
+	</div>
+    <div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{config.PayoutThreshold}}</h3></div><small class="text-black"><b>PAYOUTS</b></small> <small class="text-green"><u>EVERY 20 MIN.</u></small>
+	   </center>
+	  </div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3># {{format-number epoch}}</h3></div><small class="text-black"><b>EPOCH</b></small>
+	   </center>
+	  </div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{format-number dag}} GB</h3></div><small class="text-black"><b>DAG</b></small> <small class="text-green"><u>SIZE</u></small>
+	   </center>
+	  </div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+	  <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{format-relative (seconds-to-ms stats.model.stats.lastBlockFound)}}</h3></div><small class="text-black"><b>LAST POOL</b></small> <small class="text-green"><u>BLOCK</u></small>
+	   </center>
+	  </div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+          <div class="note note-success">
+	   <center>
+		<div class="text-black"><h3>{{format-number stats.blockTime}} s</h3></div><small class="text-black"><b>AVG.</b></small><small class="text-green"><u> BLOCK TIME</u></small>
+		</center>
+		</div>
+             </div>
+
+</div>
+	<div class="row">
+    <div class="col-xs-12 col-md-6">
+	  <div class="note note-success">
+	   <center>
+	    <h3></h3>
+	     {{high-charts mode=mode chartOptions=chartOptions content=chartData}}
+	   </center>
+	  </div>
+	</div>
+	
+    <div class="col-xs-12 col-md-6 pull-right">
+	  <div class="note note-success">
+	   <center>
+	    <h3></h3>
+	     {{high-charts mode=mode chartOptions=chartDiff content=chartData}}
+	   </center>
+	  </div>
+	</div>
+  </div>
+</div>
