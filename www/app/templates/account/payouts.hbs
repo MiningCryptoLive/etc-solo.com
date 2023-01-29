@@ -17,9 +17,9 @@
 		  <table class="table table-condensed table-striped">
 			<thead>
 			  <tr>
-				<th>Time</th>
-				<th>Tx ID</th>
-				<th>Amount</th>
+				<th style="color:white">Time</th>
+				<th style="color:white">Tx ID</th>
+				<th style="color:white">Amount</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -27,7 +27,7 @@
 				<tr>
 				  <td>{{format-date-locale tx.timestamp}}</td>
 				  <td>
-					<a href="https://expedition.dev/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
+					<a href="https://blockscout.com/etc/mainnet/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
 				  </td>
 				  <td>{{format-balance tx.amount}}</td>
 				</tr>
