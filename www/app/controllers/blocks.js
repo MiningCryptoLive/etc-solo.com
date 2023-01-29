@@ -23,7 +23,7 @@ export default Ember.Controller.extend({
                     colors: ['#f45b5b', '#8085e9', '#8d4654', '#7798BF', '#aaeeee',
                             '#ff0066', '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
                     chart: {
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         marginRight: 10,
                         height: 200,
                         events: {
@@ -68,7 +68,7 @@ export default Ember.Controller.extend({
                         title: {
                             text: "shares and difficulty",
                             style: {
-                                color: 'black',
+                                color: 'white',
                                 fontSize: '16px',
                                 fontWeight: 'bold'
                             }
