@@ -52,11 +52,9 @@ export default Ember.Controller.extend({
                 },
                 yAxis: {
                     title: {
-                        text: "Payment by Account",
-					style: {
-						color: "#fff"
-                    }
+                        text: "Payment by Account"
                 },
+
                 plotLines: [{
                     value: 0,
                     width: 1,
