@@ -29,11 +29,11 @@ export default Ember.Controller.extend({
                         }
                     },
                     title: {
-                        text: "Miner Hashrate"
+                        text: "Miner Hashrate",
+                        style: {
+                            color: "#fff"
+                        }
                     },
-					style: {
-                                color: "#fff"
-                            },
                   //////
                   rangeSelector : {
                 enabled: true,
@@ -230,11 +230,11 @@ export default Ember.Controller.extend({
                        // }
                     },
                     title: {
-                        text: "Miner Shares"
+                        text: "Miner Shares",
+                        style: {
+                            color: "#fff"
+                        }
                     },
-					style: {
-                                color: "#fff"
-                            },
                   xAxis: {
                         ordinal: false,
                         labels: {
