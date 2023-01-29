@@ -40,7 +40,7 @@ export default Ember.Controller.extend({
                 title: {
                     text: "Miner Payments",
 				 style: {
-					color: "fff"
+					color: "#fff"
 				}
                 },
                 xAxis: {
@@ -57,7 +57,7 @@ export default Ember.Controller.extend({
                     title: {
                         text: "Payment by Account",
 					style: {
-						color: "fff"
+						color: "#fff"
                     }
                 },
                 plotLines: [{
