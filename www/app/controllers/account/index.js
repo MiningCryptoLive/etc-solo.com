@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
                 t = e.getWithDefault("model.minerCharts"),
                 a = {
                     chart: {
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         type: "spline",
                         marginRight: 10,
                         height: 290,
@@ -29,7 +29,7 @@ export default Ember.Controller.extend({
                         }
                     },
                     title: {
-                        text: "Miner Hashrate"
+                        text style="color:white": "Miner Hashrate"
                     },
                   //////
                   rangeSelector : {
@@ -89,7 +89,7 @@ export default Ember.Controller.extend({
                         ordinal: false,
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                         type: "datetime",
@@ -108,12 +108,12 @@ export default Ember.Controller.extend({
                         title: {
                             text: "Hashrate",
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             },
                         },
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                         //softMin: e.getWithDefault("model.currentHashrate") / 1000000,
@@ -128,7 +128,7 @@ export default Ember.Controller.extend({
                         enabled: true,
                         itemStyle:
                           {
-                            color: "#000"
+                            color: "#fff"
                           },
                     },
                     tooltip: {
@@ -211,7 +211,7 @@ export default Ember.Controller.extend({
                 t = e.getWithDefault("model.shareCharts"),
                 a = {
                     chart: {
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         type: "column",
                         marginRight: 10,
                         height: 290
@@ -227,13 +227,13 @@ export default Ember.Controller.extend({
                        // }
                     },
                     title: {
-                        text: "Miner Shares"
+                        text style="color:white": "Miner Shares"
                     },
                   xAxis: {
                         ordinal: false,
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                         type: "datetime",
@@ -255,12 +255,12 @@ export default Ember.Controller.extend({
                         title: {
                             text: "Shares",
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             },
                         }, 
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         }
                         //softMin: e.getWithDefault("model.currentHashrate") / 1000000,
@@ -290,7 +290,7 @@ export default Ember.Controller.extend({
                         enabled: true,
                         itemStyle:
                           {
-                            color: "#000"
+                            color: "#fff"
                           },
                     },
                     tooltip: {
