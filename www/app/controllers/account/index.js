@@ -230,7 +230,7 @@ export default Ember.Controller.extend({
                        // }
                     },
                     title: {
-                        text-white: "Miner Shares"
+                        text: "Miner Shares"
                     },
 					style: {
                                 color: "#fff"
