@@ -36,7 +36,7 @@ dag: Ember.computed("stats", "model", {
                 t = e.getWithDefault("stats.model.poolCharts"),
                 a = {
                     chart: {
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         type: "spline",
                         height: 250,
                         marginRight: 10,
@@ -53,13 +53,13 @@ dag: Ember.computed("stats", "model", {
                     title: {
                         text: "Pool Hashrate",
                         style: {
-                            color: "#000"
+                            color: "#fff"
                         }
                     },
                     xAxis: {
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                         ordinal: false,
@@ -69,13 +69,13 @@ dag: Ember.computed("stats", "model", {
                         title: {
                             text: "HASHRATE",
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                         min: 0,
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         }
                     },
@@ -135,7 +135,7 @@ dag: Ember.computed("stats", "model", {
                 t = e.getWithDefault("stats.model.netCharts"),
                 a = {
                     chart: {
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         type: "spline",
                         height: 250,
                         marginRight: 10,
@@ -153,7 +153,7 @@ dag: Ember.computed("stats", "model", {
                     title: {
                         text: "Network Difficulty",
                         style: {
-                            color: "#000"
+                            color: "#fff"
                         }
                     },
                  	rangeSelector : {
@@ -229,7 +229,7 @@ dag: Ember.computed("stats", "model", {
                   
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                           //minRange: 1
                         },
@@ -241,20 +241,20 @@ dag: Ember.computed("stats", "model", {
                         title: {
                             text: "DIFFICULTY",
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         },
                        
                         labels: {
                             style: {
-                                color: "#000"
+                                color: "#fff"
                             }
                         }
                     },
                     plotLines: [{
                         value: 0,
                         width: 1,
-                        color: "#000"
+                        color: "#fff"
                     }],
                     legend: {
                         enabled: false
