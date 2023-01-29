@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
             t = e.getWithDefault("model.paymentCharts"),
             a = {
                 chart: {
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
                     type: "column",
                     marginRight: 10,
                     height: 200,
@@ -53,8 +53,8 @@ export default Ember.Controller.extend({
                 yAxis: {
                     title: {
                         text: "Payment by Account"
+                    }
                 },
-
                 plotLines: [{
                     value: 0,
                     width: 1,
