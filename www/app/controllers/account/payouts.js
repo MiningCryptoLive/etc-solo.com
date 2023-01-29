@@ -38,7 +38,7 @@ export default Ember.Controller.extend({
                     }
                 },
                 title: {
-                    text: "Miner Payments"
+                    text: "Miner Payments",
 				 style: {
 					color: "fff"
 				}
@@ -55,7 +55,7 @@ export default Ember.Controller.extend({
                 },
                 yAxis: {
                     title: {
-                        text: "Payment by Account"
+                        text: "Payment by Account",
 					style: {
 						color: "fff"
                     }
