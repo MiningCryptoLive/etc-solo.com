@@ -29,7 +29,7 @@ export default Ember.Controller.extend({
                         }
                     },
                     title: {
-                        text style="color:white": "Miner Hashrate"
+                        text-white: "Miner Hashrate"
                     },
                   //////
                   rangeSelector : {
@@ -227,7 +227,7 @@ export default Ember.Controller.extend({
                        // }
                     },
                     title: {
-                        text style="color:white": "Miner Shares"
+                        text-white: "Miner Shares"
                     },
                   xAxis: {
                         ordinal: false,
