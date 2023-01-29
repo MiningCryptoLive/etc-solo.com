@@ -203,7 +203,7 @@ span.logo-gold {
 }
 
 .note-success {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     border-left-color: #02A11C;
 	border-top: 1px solid #02A11C;
 	border-bottom: 1px solid #02A11C;
