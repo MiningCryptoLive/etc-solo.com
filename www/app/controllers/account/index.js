@@ -29,9 +29,11 @@ export default Ember.Controller.extend({
                         }
                     },
                     title: {
-                        text: "Miner Hashrate" },
-					style: { color: "#fff"
+                        text: "Miner Hashrate"
                     },
+					style: {
+                                color: "#fff"
+                            },
                   //////
                   rangeSelector : {
                 enabled: true,
