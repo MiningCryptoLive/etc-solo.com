@@ -15,7 +15,7 @@
       <td>{{#link-to 'account' block.login class='hash'}}{{block.login}}{{/link-to}}</td>
     {{/if}}
   </td>
-  <td>{{format-date-locale block.timestamp}}</td>
+  <td style="color:purple">{{format-date-locale block.timestamp}}</td>
   <td>
     {{#if block.isLucky}}
       <span class="label label-success">{{format-number block.variance style='percent'}}</span>
@@ -23,20 +23,20 @@
       <span class="label label-danger">{{format-number block.variance style='percent'}}</span>
     {{/if}}
   </td>
-  <td>
+  <td style="color:green">
     {{#if block.uncle}}
     <span>{{block.formatReward}}</span>
     {{else if block.isOk}}
     <span>{{block.formatReward}}</span>
     {{/if}}
   </td>
-  <td>
+  <td style="color:red">
     {{#if block.uncle}}
     <span>Uncle</span>
     {{else if block.isOk}}
     <span>Block</span>
     {{/if}}
   </td>
-  <td><span>{{format-hashrate block.shareDiff}}</span></td>
-  <td><span>{{block.worker}}</span></td>
+  <td style="color:red"><span>{{format-hashrate block.shareDiff}}</span></td>
+  <td style="color:green"><span>{{block.worker}}</span></td>
 </tr>
