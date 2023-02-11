@@ -148,6 +148,7 @@ type Miner struct {
 type Worker struct {
 	Miner
 	TotalHR         int64   `json:"hr2"`
+	PortDiff 		  string  `"json:"portDiff"`
 	ValidShares     int64   `json:"valid"`
 	StaleShares     int64   `json:"stale"`
 	InvalidShares   int64   `json:"invalid"`
@@ -1541,6 +1542,8 @@ func convertWorkersStats(window int64, raw *redis.ZSliceCmd, blocks *redis.ZSlic
 		if score >= now-window {
 			worker.HR += share
 		}
+
+		worker.PortDiff = parts[0]
 
 		if worker.LastBeat < score {
 			worker.LastBeat = score
